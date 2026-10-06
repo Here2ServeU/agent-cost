@@ -1,0 +1,9 @@
+# your private Python box; everyone makes their own with setup.sh
+.venv/
+__pycache__/
+*.pyc
+
+# run history, written every time the agent runs; reset.py clears it
+ledger/
+
+.DS_Store

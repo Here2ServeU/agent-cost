@@ -1,0 +1,29 @@
+# The six-proof check, on every push.
+#
+# Safety layers rot quietly: somebody tidies the runner, the checkpoint
+# stops being written after every step, and nothing fails until the night
+# it matters. This makes it fail on the day it breaks instead.
+
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Six steps, six proofs
+        run: python3 verify.py
+      - name: The whole walkthrough still runs
+        run: python3 walkthrough.py --no-pause
+      - name: The arithmetic still runs
+        run: python3 report.py --csv
