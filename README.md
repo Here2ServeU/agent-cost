@@ -79,7 +79,7 @@ Python and VS Code installed:
 
 | macOS | Windows |
 |---|---|
-| [![Install on a Mac](https://img.youtube.com/vi/8ZIiXg4XOY0/hqdefault.jpg)](https://youtu.be/8ZIiXg4XOY0) | [![Install on Windows](https://img.youtube.com/vi/3e2-GRBibWc/hqdefault.jpg)](https://youtu.be/3e2-GRBibWc) |
+| [![Install on a Mac](https://img.youtube.com/vi/8ZIiXg4XOY0/hqdefault.jpg)](https://youtu.be/8ZIiXg4XOY0) | [![Install on Windows](https://img.youtube.com/vi/f091sbQSv7I/hqdefault.jpg)](https://youtu.be/f091sbQSv7I) |
 
 ### macOS
 
